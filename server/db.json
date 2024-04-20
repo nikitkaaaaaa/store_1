@@ -1,16 +1,46 @@
 {
-    "test" : [
+    "sneakers" : [
         {
-            "name" : "nikita",
-            "age" : 17
+            "name" : "Nike",
+            "id" : 1,
+            "image" : "https://avatars.mds.yandex.net/i?id=c7d31e6a2567a32c7bbc20e8a2f5d4733ba31a83-12366556-images-thumbs&n=13",
+            "price" : 43,
+            "category" : "sneakers"
         },
         {
-            "name" : "nikita",
-            "age" : 147
+            "name" : "Nike",
+            "id" : 12,
+            "image" : "https://avatars.mds.yandex.net/i?id=cb72beec2a0e20b84dcdec89756adf943b45c4f5-10349583-images-thumbs&n=13",
+            "price" : 29,
+            "category" : "sneakers"
         },
         {
-            "name" : "nikita",
-            "age" : 317
+            "name" : "Adidas",
+            "id" : 123,
+            "image" : "https://avatars.mds.yandex.net/i?id=994549ce90bfff4e0f3a68d632d62925cf1dba52-9182388-images-thumbs&n=13",
+            "price" : 45,
+            "category" : "sneakers"
+        },
+        {
+            "name" : "Adidas",
+            "id" : 111,
+            "image" : "https://avatars.mds.yandex.net/i?id=8510496ab6f7ed0d2ff3bfc9680c2d19fd156837-6250997-images-thumbs&n=13",
+            "price" : 43,
+            "category" : "sneakers"
+        },
+        {
+            "name" : "Asics",
+            "id" : 1434,
+            "image" : "https://avatars.mds.yandex.net/i?id=e29d1dfca7f2f75fd98fd0ad48efaa0723c5353b-5351088-images-thumbs&n=13",
+            "price" : 65,
+            "category" : "sneakers"
+        },
+        {
+            "name" : "Asics",
+            "id" : 31,
+            "image" : "https://avatars.mds.yandex.net/i?id=f7b3157fbfbae30cadf4e246854930cae62d793d-9181373-images-thumbs&n=13",
+            "price" : 40,
+            "category" : "sneakers"
         }
     ]
 }

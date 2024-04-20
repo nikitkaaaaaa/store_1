@@ -1,10 +1,12 @@
-import './Style.css';
-function App() {
+import React from 'react'
+import Main from './componets/Main'
+
+const App = () => {
   return (
-   <div className='test'>
-      div1
-   </div>
-  );
+    <div>
+      <Main/>
+    </div>
+  )
 }
 
-export default App;
+export default App
