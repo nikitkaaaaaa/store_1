@@ -5,7 +5,7 @@ export const tshirt = createApi({
     endpoints : (builder) => ({
         gettshirt : builder.query({
             query : () => 'tshirt',
-            metod : 'GET'
+            method : 'GET'
         }) 
     })
 })

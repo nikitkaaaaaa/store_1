@@ -5,7 +5,7 @@ export const hats = createApi({
     endpoints : (builder) => ({
         gethats : builder.query({
             query : () => 'hats',
-            metod : 'GET'
+            method : 'GET'
         }) 
     })
 })
