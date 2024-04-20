@@ -1,46 +1,110 @@
 {
-    "sneakers" : [
+    "tshirt" : [
         {
-            "name" : "Nike",
-            "id" : 1,
-            "image" : "https://avatars.mds.yandex.net/i?id=c7d31e6a2567a32c7bbc20e8a2f5d4733ba31a83-12366556-images-thumbs&n=13",
-            "price" : 43,
-            "category" : "sneakers"
+            "id" : "sdfsdf",
+            "image" : "https://avatars.mds.yandex.net/i?id=cf1b29ef9651fff37a579905680daf20108dc8e1-10833537-images-thumbs&n=13",
+            "price" : 12
         },
         {
-            "name" : "Nike",
-            "id" : 12,
-            "image" : "https://avatars.mds.yandex.net/i?id=cb72beec2a0e20b84dcdec89756adf943b45c4f5-10349583-images-thumbs&n=13",
-            "price" : 29,
-            "category" : "sneakers"
+            "id" : "we",
+            "image" : "https://avatars.mds.yandex.net/i?id=12051ebc9a5c603ae290ad9645db31b1c5c128cc-9870356-images-thumbs&n=13",
+            "price" : 8
         },
         {
-            "name" : "Adidas",
-            "id" : 123,
-            "image" : "https://avatars.mds.yandex.net/i?id=994549ce90bfff4e0f3a68d632d62925cf1dba52-9182388-images-thumbs&n=13",
-            "price" : 45,
-            "category" : "sneakers"
+            "id" : 241,
+            "image" : "https://avatars.mds.yandex.net/i?id=f08a59f4a2a06864e0df2b3a40c931bfb1d0f0b0-12885208-images-thumbs&n=13",
+            "price" : 17
         },
         {
-            "name" : "Adidas",
-            "id" : 111,
-            "image" : "https://avatars.mds.yandex.net/i?id=8510496ab6f7ed0d2ff3bfc9680c2d19fd156837-6250997-images-thumbs&n=13",
-            "price" : 43,
-            "category" : "sneakers"
+            "id" : 23421,
+            "image" : "https://avatars.mds.yandex.net/i?id=cf1b29ef9651fff37a579905680daf20108dc8e1-10833537-images-thumbs&n=13",
+            "price" : 12
         },
         {
-            "name" : "Asics",
-            "id" : 1434,
-            "image" : "https://avatars.mds.yandex.net/i?id=e29d1dfca7f2f75fd98fd0ad48efaa0723c5353b-5351088-images-thumbs&n=13",
-            "price" : 65,
-            "category" : "sneakers"
+            "id" : 1231,
+            "image" : "https://avatars.mds.yandex.net/i?id=4ef30ca975ba0119fefaa50c9913f715c059e680-11376477-images-thumbs&n=13",
+            "price" : 21
+        }
+    ],
+    "pants" : [
+       {
+        "id" : "132",
+        "image" : "https://avatars.mds.yandex.net/i?id=1eb576cdb1addb727259cef60426c2afd0fb1995-12738621-images-thumbs&n=13",
+        "price" : 52
+       },
+       {
+        "id" : "1332",
+        "image" : "https://avatars.mds.yandex.net/i?id=b851dae7a0ca1a8afe0b2082f542f8f16cf6511e-9848182-images-thumbs&n=13",
+        "price" : 45
+       },
+       {
+        "id" : "sdf132",
+        "image" : "https://avatars.mds.yandex.net/i?id=92a47d9a7654de106000571db260b54a2e1f36e3-10465270-images-thumbs&n=13",
+        "price" : 65
+       },
+       {
+        "id" : "1s3dsf2",
+        "image" : "https://avatars.mds.yandex.net/i?id=ce6a1e6eb29babcd7f601ed0eac177ad7a8468b2-8338869-images-thumbs&n=13",
+        "price" : 40
+       },
+       {
+        "id" : "1g3w2",
+        "image" : "https://avatars.mds.yandex.net/i?id=f9c8287bb30caef4425d59debde271bb0edf7dc4-8497134-images-thumbs&n=13",
+        "price" : 35
+       }
+    ],
+    "hats" : [
+        {
+            "id" : "1fe43",
+            "image" : "https://avatars.mds.yandex.net/i?id=4c106710c9615ca6bb4017f795a89e35d61e08d9-10754985-images-thumbs&n=13",
+            "price" : 15
         },
         {
-            "name" : "Asics",
-            "id" : 31,
-            "image" : "https://avatars.mds.yandex.net/i?id=f7b3157fbfbae30cadf4e246854930cae62d793d-9181373-images-thumbs&n=13",
-            "price" : 40,
-            "category" : "sneakers"
+            "id" : "1he43",
+            "image" : "https://avatars.mds.yandex.net/i?id=993cb250d279bf879feda13e1483cc9e0a7263f6-12498584-images-thumbs&n=13",
+            "price" : 20
+        },
+        {
+            "id" : "1fedfg43",
+            "image" : "https://avatars.mds.yandex.net/i?id=f3041fa0e553313e74a054bfca62c5d00e3c6836-12528274-images-thumbs&n=13",
+            "price" : 35
+        },
+        {
+            "id" : "1fe4d3",
+            "image" : "https://avatars.mds.yandex.net/i?id=b60f66e13955a57f4765ba1a046a135442973bd9-12819212-images-thumbs&n=133",
+            "price" : 15
+        },
+        {
+            "id" : "12fe43",
+            "image" : "https://avatars.mds.yandex.net/i?id=d5c33136ef3e7bf1d5cbc1d4e60143892428cdfe-12497179-images-thumbs&n=13",
+            "price" : 25
+        }
+    ],
+    "hoodies" : [
+        {
+            "id" : "123",
+            "image" : "https://avatars.mds.yandex.net/i?id=0023af18e430c229d6fbdc89b09d94da09cbd139-10150420-images-thumbs&n=13",
+            "price" : 54
+        },
+        {
+            "id" : "121323",
+            "image" : "https://avatars.mds.yandex.net/i?id=00dc5fb809f2a4caa17bf876b0a25f9144bda038-10918338-images-thumbs&n=13",
+            "price" : ""
+        },
+        {
+            "id" : "12g3",
+            "image" : "https://avatars.mds.yandex.net/i?id=e4237be4fcd1d2843f181876591d8f0d142942e4-12500667-images-thumbs&n=13",
+            "price" : 89
+        },
+        {
+            "id" : "1d23",
+            "image" : "https://avatars.mds.yandex.net/i?id=72ccf6c52dfefc3160315e5965ccd54b8e2121d0-12523300-images-thumbs&n=13",
+            "price" : 66
+        },
+        {
+            "id" : "1sda23",
+            "image" : "https://avatars.mds.yandex.net/i?id=f4600be0d2c4ffccbb7e49d14d7622e4-4377652-images-thumbs&n=13",
+            "price" : 43
         }
     ]
 }
