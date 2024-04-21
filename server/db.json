@@ -107,7 +107,7 @@
             "price" : 43
         }
     ],
-    "summershoes" : [
+    "summer_shoes" : [
         {
             "id" : "fdlg",
             "image" : "https://avatars.mds.yandex.net/i?id=ecd1f0f4346450c48fb47739801deec35e3f2d03-10151263-images-thumbs&n=13",
@@ -134,7 +134,7 @@
             "price" : 43
         }
     ],
-    "autumnshoes" : [
+    "autumn_shoes" : [
         {
             "id" : "45jer",
             "image" : "https://avatars.mds.yandex.net/i?id=32e20c75b36f6ebffe10fae57d676e937dd2d6e9-12168744-images-thumbs&n=13",
@@ -161,7 +161,7 @@
             "price" : 93
         }
     ],
-    "wintershoes" : [
+    "winter_shoes" : [
         {
             "id" : "42dgkd",
             "image" : "https://avatars.mds.yandex.net/i?id=a05fe6f0b68260090b78d08ef7c128fc7f1de1c8-11271031-images-thumbs&n=13",
@@ -188,7 +188,7 @@
             "price" : 98
         }
     ],
-    "springshoes" : [
+    "spring_shoes" : [
         {
             "id" : "12353sd",
             "image" : "https://avatars.mds.yandex.net/i?id=9e60e34471d186831ea605721b7ee93d98732ec7-12647654-images-thumbs&n=13",
@@ -214,5 +214,114 @@
             "image" : "https://avatars.mds.yandex.net/i?id=4488bb668bc32656f8bc6060cb89a5f0139e4435-11270328-images-thumbs&n=13",
             "price" : 90
         }
+    ],
+    "washing_machines" : [
+        {
+            "id" : "gosdfo4",
+            "image" : "https://avatars.mds.yandex.net/i?id=6f3efb9e61e8e1821180818d9d29eac7c8ae002d-10414202-images-thumbs&n=13",
+            "price" : 270
+        },
+        {
+            "id" : "sdfgfe",
+            "image" : "https://avatars.mds.yandex.net/i?id=8192323fc221fe3b4615d054cc51fa37f5df37b1-9634884-images-thumbs&n=13",
+            "price" : 190
+        },
+        {
+            "id" : "88884395df",
+            "image" : "https://avatars.mds.yandex.net/i?id=fc0a88601b37dd2c45211c89944112c41c44f750-12473993-images-thumbs&n=13",
+            "price" : 310
+        },
+        {
+            "id" : "313123",
+            "image" : "https://avatars.mds.yandex.net/i?id=90e481a2e6751552e61d8032e2941ffcda841075-8804196-images-thumbs&n=13",
+            "price" : 400
+        },
+        {
+            "id" : "rweopri3r9653",
+            "image" : "https://avatars.mds.yandex.net/i?id=7c7d03312a03c646969d553c6e58cdb8447ae878-4379030-images-thumbs&n=13",
+            "price" : 150
+        }
+    ],
+    "refrigerators" : [
+        {
+            "id" : "e8we98r",
+            "image" : "https://avatars.mds.yandex.net/i?id=6cc96edd08d477130fd41c62686b41d9de85d68d-12543315-images-thumbs&n=13",
+            "price" : 190
+        },
+        {
+            "id" : "8sdf90",
+            "image" : "https://avatars.mds.yandex.net/i?id=7a5059e0c6404682c916e86c07425e2551e5c5fc-10207868-images-thumbs&n=13",
+            "price" : 222
+        },
+        {
+            "id" : "trieo8956",
+            "image" : "https://avatars.mds.yandex.net/i?id=7cf91f454d2c66188993d602a4fac876959d8fe6-10574297-images-thumbs&n=13",
+            "price" : 199
+        },
+        {
+            "id" : "123dfytery",
+            "image" : "https://avatars.mds.yandex.net/i?id=48ebde4b61cd586438c9172c6cd62dfdece75869-10753427-images-thumbs&n=13",
+            "price" : 280
+        },
+        {
+            "id" : "werwerwerwer",
+            "image" : "https://avatars.mds.yandex.net/i?id=a106710f3b5978a0db5aa7db1723a7d7c575feb2-5502412-images-thumbs&n=13",
+            "price" : 312
+        }
+    ],
+    "televisions" : [
+        {
+            "id" : "werwrwerfgd",
+            "image" : "https://avatars.mds.yandex.net/i?id=a75e9fc811ad65d963ea22c54b85f24ba444e5e3-12514612-images-thumbs&n=13",
+            "price" : 510
+        },
+        {
+            "id" : "485986305",
+            "image" : "https://avatars.mds.yandex.net/i?id=01ba0d903395a46866258fc4f0803233d30e5a99-9849134-images-thumbs&n=13",
+            "price" : 490
+        },
+        {
+            "id" : "asadad",
+            "image" : "https://avatars.mds.yandex.net/i?id=9c4bce78c9c205d93ef30f59dbddb3e3811b4b7d-10085718-images-thumbs&n=13",
+            "price" : 370
+        },
+        {
+            "id" : "213123",
+            "image" : "https://avatars.mds.yandex.net/i?id=42c544f7f1ae5821bd4c9ea498c3b93851d37cd0-11485721-images-thumbs&n=13",
+            "price" : 478
+        },
+        {
+            "id" : "943598dfg",
+            "image" : "https://avatars.mds.yandex.net/i?id=78a5560c6b2e3fdc1f18a8b6b72e37f2be49ae2a-5865789-images-thumbs&n=13",
+            "price" : 555
+        }
+    ],
+    "microwave_ovens" : [
+        {
+            "id" : "8w9er7db",
+            "image" : "https://avatars.mds.yandex.net/i?id=3a337d4367317690f4d8552e63783c3081b7b54d-10092505-images-thumbs&n=13",
+            "price" : 90
+        },
+        {
+            "id" : "4956ijfhgio3",
+            "image" : "https://avatars.mds.yandex.net/i?id=0b77c5b68009f032c048896dbdc95a51c3c4325e-9181211-images-thumbs&n=13",
+            "price" : 89
+        },
+        {
+            "id" : "sdfsdfsdf",
+            "image" : "https://avatars.mds.yandex.net/i?id=c0425ef6b4013ae95b6c602f706ded48f03b9b12-10354718-images-thumbs&n=13",
+            "price" : 101
+        },
+        {
+            "id" : "oeiiporb",
+            "image" : "https://avatars.mds.yandex.net/i?id=6f0dba0484b9047743a4b3d9d59285591b99c00c-9182287-images-thumbs&n=13",
+            "price" : 111
+        },
+        {
+            "id" : "dsfsgdss",
+            "image" : "https://avatars.mds.yandex.net/i?id=9ae06e90de6124f58934ab38fe6a30f7e77100a2-7765754-images-thumbs&n=13",
+            "price" : 91
+        }
     ]
+    
 }

@@ -1,23 +1,22 @@
 import React from 'react'
-import { useGetsummershoesQuery } from '../redux/shoes/summershoes'
-import { useGetwintershoesQuery } from '../redux/shoes/wintershoes';
-import { useGetspringshoesQuery } from '../redux/shoes/springshoes';
-import { useGetautumnshoesQuery } from '../redux/shoes/automnshoes';
-
+import { useGetwinter_shoesQuery } from '../redux/shoes/winter_shoes';
+import { useGetsummer_shoesQuery } from '../redux/shoes/summer_shoes';
+import { useGetautumn_shoesQuery } from '../redux/shoes/automn_shoes';
+import { useGetspring_shoesQuery } from '../redux/shoes/spring_shoes';
 const Shoes = () => {
-  const {data : summer = []} = useGetsummershoesQuery();
-  const {data : autom = []} = useGetautumnshoesQuery();
-  const {data : winter = []} = useGetwintershoesQuery();
-  const {data : spring = []} = useGetspringshoesQuery();
+  const {data : summer = []} = useGetsummer_shoesQuery();
+  const {data : autom = []} = useGetautumn_shoesQuery();
+  const {data : winter = []} = useGetwinter_shoesQuery();
+  const {data : spring = []} = useGetspring_shoesQuery()
   return (
     <div>
-      <div>summershoes</div>
+      <div>summer shoes</div>
       {summer.map((item) => <div key={item.id}><img src={item.image} alt="" /></div>)}
-      <div>automshoes</div>
+      <div>autom shoes</div>
       {autom.map((item) => <div key={item.id}><img src={item.image} alt="" /></div>)}
-      <div>wintershoes</div>
+      <div>winter shoes</div>
       {winter.map((item) => <div key={item.id}><img src={item.image} alt="" /></div>)}
-      <div>springshoes</div>
+      <div>spring shoes</div>
       {spring.map((item) => <div key={item.id}><img src={item.image} alt="" /></div>)}
     </div>
   )

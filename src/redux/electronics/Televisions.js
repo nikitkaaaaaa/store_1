@@ -1,12 +1,12 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-export const wintershoes = createApi({
-    reducerPath : 'wintershoes',
+export const televisions = createApi({
+    reducerPath : 'televisions',
     baseQuery : fetchBaseQuery({baseUrl : 'http://localhost:3001/'}),
     endpoints : (builder) => ({
-        getwintershoes : builder.query({
-            query : () => 'wintershoes',
+        gettelevisions : builder.query({
+            query : () => 'televisions',
             method : 'GET'
         }) 
     })
 })
-export const {useGetwintershoesQuery} = wintershoes;
+export const {useGettelevisionsQuery} = televisions;
