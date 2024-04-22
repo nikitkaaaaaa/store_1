@@ -9,15 +9,23 @@ const Clothes = () => {
   const { data : tshirt= [] } = useGettshirtQuery()
   const { data : hats= [] } = useGethatsQuery()
   return (
-    <div>
-        <div>pants</div>
-        {pants.map((item) => <div key={item.id}><img src={item.image} alt="" /></div>)}
-        <div>hoodies</div>
-        {hoodies.map((item) => <div key={item.id}><img src={item.image} alt="" /></div>)}
-        <div>tshirt</div>
-        {tshirt.map((item) => <div key={item.id}><img src={item.image} alt="" /></div>)}
-        <div>hats</div>
-        {hats.map((item) => <div key={item.id}><img src={item.image} alt="" /></div>)}
+    <div className='page_products'>
+        <div className='heading'>Pants</div>
+        <div className='products'>
+          {pants.map((item) => <div key={item.id}><img src={item.image} alt="" className='products_image' /></div>)}
+        </div>
+        <div className='heading'>Hoodies</div>
+        <div className='products'>
+          {hoodies.map((item) => <div key={item.id}><img src={item.image} alt="" className='products_image' /></div>)}
+        </div>
+        <div className='heading'>Tshirt</div>
+        <div className='products'>
+          {tshirt.map((item) => <div key={item.id}><img src={item.image} alt="" className='products_image'/></div>)}
+        </div>
+        <div className='heading'>Hats</div>
+        <div className='products'>
+          {hats.map((item) => <div key={item.id}><img src={item.image} alt="" className='products_image'/></div>)}
+        </div>
     </div>
   )
 }

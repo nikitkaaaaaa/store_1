@@ -7,15 +7,17 @@ import Shoes from '../componets/Shoes';
 import Default from '../componets/Default';
 const Main = () => {
   return (
-    <div className='contenier'>
-      <div className='left_panel'>
-        <div style={{paddingBottom : '25px'}}>Category</div>
-        <Link to='/clothes'>Clothes</Link>
-        <Link to='/electronics'>Electronics</Link>
-        <Link to='/shoes'>Shoes</Link>
-      </div>
-      <div className='right_panel'>
-        <div>NEW</div>
+    <div >
+      <div className='contenier'>
+        <div className='left_panel'>
+          <div style={{paddingBottom : '25px'}}>Category</div>
+          <Link to='/clothes'>Clothes</Link>
+          <Link to='/electronics'>Electronics</Link>
+          <Link to='/shoes'>Shoes</Link>
+        </div>
+        <div className='right_panel'>
+          <div>NEW</div>
+        </div>
       </div>
       <Routes>
         <Route path= '/clothes' element = {<Clothes/>}></Route>

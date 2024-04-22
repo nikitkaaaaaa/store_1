@@ -10,14 +10,22 @@ const Shoes = () => {
   const {data : spring = []} = useGetspring_shoesQuery()
   return (
     <div>
-      <div>summer shoes</div>
-      {summer.map((item) => <div key={item.id}><img src={item.image} alt="" /></div>)}
-      <div>autom shoes</div>
-      {autom.map((item) => <div key={item.id}><img src={item.image} alt="" /></div>)}
-      <div>winter shoes</div>
-      {winter.map((item) => <div key={item.id}><img src={item.image} alt="" /></div>)}
-      <div>spring shoes</div>
-      {spring.map((item) => <div key={item.id}><img src={item.image} alt="" /></div>)}
+      <div className='heading'>Summer shoes</div>
+      <div className='products'>
+        {summer.map((item) => <div key={item.id}><img src={item.image} alt="" className='products_image'/></div>)}
+      </div>
+      <div className='heading'>Autom shoes</div>
+      <div className='products'>
+        {autom.map((item) => <div key={item.id}><img src={item.image} alt="" className='products_image'/></div>)}
+      </div>
+      <div className='heading'>Winter shoes</div>
+      <div className='products'>
+        {winter.map((item) => <div key={item.id}><img src={item.image} alt="" className='products_image'/></div>)}
+      </div>
+      <div className='heading'>Spring shoes</div>
+      <div className='products'>
+        {spring.map((item) => <div key={item.id}><img src={item.image} alt=""className='products_image' /></div>)}
+      </div>
     </div>
   )
 }
