@@ -1,4 +1,14 @@
 {
+    "basket" : [
+        {
+            "id" : "sdfkldjsgh",
+            "image" : "https://avatars.mds.yandex.net/i?id=cf1b29ef9651fff37a579905680daf20108dc8e1-10833537-images-thumbs&n=13",
+            "price" : 12
+        }
+    ],
+    "liked" : [
+
+    ],
     "tshirt" : [
         {
             "id" : "sdfsdf",

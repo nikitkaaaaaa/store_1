@@ -11,21 +11,50 @@ const Electronics = () => {
   const {data : microwave_ovens = []} = useGetmicrowave_ovensQuery()
   return (
     <div className='page_products'>
+      <div style={{border : '2px solid green',display : 'flex', flexDirection : 'column',marginBottom : '20px'}}>
       <div className='heading'>Washing mashines</div>
       <div className='products'>
-        {washing_mashines.map(item => <div key={item.id}><img src={item.image} alt="" className='products_image'/><p>{item.price}</p></div>)}
+        {washing_mashines.map(item => <div key={item.id}>
+          <>
+            <img src={item.image} alt="" className='products_image'></img>
+            <div style={{color : 'white'}}>Price : {item.price}$</div>
+          </>
+        </div>)}
       </div>
-      <div  className='heading'>Refrigerators</div>
-      <div className='products' >
-        {refrigerators.map(item => <div key={item.id}><img src={item.image} alt="" className='products_image' /></div>)}
       </div>
-      <div  className='heading'>Televisions</div>
+      <div style={{border : '2px solid green',display : 'flex', flexDirection : 'column',marginBottom : '10px'}}>
+      <div className='heading'>Refrigerators </div>
       <div className='products'>
-        {televisions.map(item => <div key={item.id} ><img src={item.image} alt="" className='products_image' /></div>)}
+        {refrigerators.map(item => <div key={item.id}>
+          <>
+            <img src={item.image} alt="" className='products_image'></img>
+            <div style={{color : 'white'}}>Price : {item.price}$</div>
+            <div style={{color : 'white'}}>{item.id}</div>
+          </>
+        </div>)}
       </div>
-      <div  className='heading'>Microwave ovens</div>
+      </div>
+      <div style={{border : '2px solid green',display : 'flex', flexDirection : 'column',marginBottom : '10px'}}>
+      <div className='heading'>Televisions  </div>
       <div className='products'>
-        {microwave_ovens.map(item => <div key={item.id} ><img src={item.image} alt="" className='products_image' /></div>)}
+        {televisions .map(item => <div key={item.id}>
+          <>
+            <img src={item.image} alt="" className='products_image'></img>
+            <div style={{color : 'white'}}>Price : {item.price}$</div>
+          </>
+        </div>)}
+      </div>
+      </div>
+      <div style={{border : '2px solid green',display : 'flex', flexDirection : 'column',marginBottom : '10px'}}>
+      <div className='heading'>Microwave ovens </div>
+      <div className='products'>
+        {microwave_ovens .map(item => <div key={item.id}>
+          <>
+            <img src={item.image} alt="" className='products_image'></img>
+            <div style={{color : 'white'}}>Price : {item.price}$</div>
+          </>
+        </div>)}
+      </div>
       </div>
     </div>
   )

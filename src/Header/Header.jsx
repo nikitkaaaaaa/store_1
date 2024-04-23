@@ -1,14 +1,20 @@
 import React from 'react'
 import './Style_header.css';
+import { useNavigate } from 'react-router-dom';
+import './Style_app.css'
 const Header = () => {
+  const navigate = useNavigate();
+  const goHohe = () => {
+    navigate('/');
+  }
   return (
-    <div style={{display : 'flex',justifyContent :'space-between', padding :'0% 5%'}}>
-      <div>+</div>
+    <header>
+      <div onClick={goHohe}>+</div>
       <div style={{display : 'flex',border : '1px solid ',justifyContent :'flex-start'}}>
         <div><img className='image_header' src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt="" /></div>
         <div><img  className='image_header' src="https://cdn-icons-png.flaticon.com/128/711/711897.png" alt="" /></div>
       </div>
-    </div>
+    </header>
   )
 }
 

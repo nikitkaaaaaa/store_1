@@ -1,3 +1,8 @@
 .image_header{
     width: 15%;
 }
+header{
+    display : flex;
+    justify-content :space-between;
+    padding :0% 5%;
+}
