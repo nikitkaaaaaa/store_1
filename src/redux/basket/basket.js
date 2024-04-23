@@ -6,7 +6,14 @@ export const basket = createApi({
         getbasket : builder.query({
             query : () => 'basket',
             method : 'GET'
-        }) 
+        }),
+        addbasket : builder.mutation({
+            query : (body)=>({
+                url : 'basket',
+                method : 'POST',
+                body
+            })
+        })
     })
 })
-export const {useGetbasketQuery} = basket;
+export const {useGetbasketQuery,useAddbasketMutation} = basket;

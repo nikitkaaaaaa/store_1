@@ -4,11 +4,13 @@ import { useGetrefrigeratorsQuery } from '../redux/electronics/Refrigerators';
 import { useGettelevisionsQuery } from '../redux/electronics/Televisions';
 import { useGetmicrowave_ovensQuery } from '../redux/electronics/Microwave_ovens';
 import './Style.css'
+import { useAddlikedMutation } from '../redux/liked/liked';
 const Electronics = () => {
   const {data : washing_mashines = []} = useGetwashing_machinesQuery();
   const {data : refrigerators = []} = useGetrefrigeratorsQuery();
   const {data : televisions = []} = useGettelevisionsQuery();
   const {data : microwave_ovens = []} = useGetmicrowave_ovensQuery()
+  const [addliked] = useAddlikedMutation();
   return (
     <div className='page_products'>
       <div style={{border : '2px solid green',display : 'flex', flexDirection : 'column',marginBottom : '20px'}}>
@@ -25,7 +27,7 @@ const Electronics = () => {
       <div style={{border : '2px solid green',display : 'flex', flexDirection : 'column',marginBottom : '10px'}}>
       <div className='heading'>Refrigerators </div>
       <div className='products'>
-        {refrigerators.map(item => <div key={item.id}>
+        {refrigerators.map(item => <div key={item.id} onClick={()=> addliked({id :item.id,price : item.id})}>
           <>
             <img src={item.image} alt="" className='products_image'></img>
             <div style={{color : 'white'}}>Price : {item.price}$</div>

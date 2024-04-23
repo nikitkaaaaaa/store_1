@@ -12,6 +12,7 @@ import { summer_shoes } from "./shoes/summer_shoes";
 import { autumn_shoes } from "./shoes/automn_shoes";
 import { winter_shoes } from "./shoes/winter_shoes";
 import { basket } from "./basket/basket";
+import { liked } from "./liked/liked";
 const store = configureStore({
     reducer : {
         [pants.reducerPath] : pants.reducer,
@@ -26,10 +27,12 @@ const store = configureStore({
         [refrigerators.reducerPath] : refrigerators.reducer,
         [televisions.reducerPath] : televisions.reducer,
         [microwave_ovens.reducerPath] : microwave_ovens.reducer,
-        [basket.reducerPath] : basket.reducer
+        [basket.reducerPath] : basket.reducer,
+        [liked.reducerPath] : liked.reducer
     },
     middleware : (middleware) => middleware().concat(pants.middleware,tshirt.middleware,hats.middleware,
         hoodies.middleware,summer_shoes.middleware,autumn_shoes.middleware,spring_shoes.middleware,winter_shoes.middleware,
-        washing_machines.middleware,refrigerators.middleware,televisions.middleware,microwave_ovens.middleware,basket.middleware)
+        washing_machines.middleware,refrigerators.middleware,televisions.middleware,microwave_ovens.middleware,basket.middleware,
+        liked.middleware)
 })
 export default store;
