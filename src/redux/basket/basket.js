@@ -17,7 +17,7 @@ export const basket = createApi({
         }),
         addbasket : builder.mutation({
             query : (body)=>({
-                url : 'bakset',
+                url : 'basket',
                 method : 'POST',
                 body
             }),
@@ -27,7 +27,8 @@ export const basket = createApi({
             query : (id) => ({
                 url : `basket/${id}`,
                 method : 'DELETE'
-            })
+            }),
+            invalidatesTags: [{ type: 'Products', id: 'LIST' }] 
         })
     }),
 })

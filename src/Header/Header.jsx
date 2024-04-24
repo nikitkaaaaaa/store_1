@@ -12,8 +12,7 @@ const Header = () => {
   }
   const back_to_basket = () => {
     navigate('/basket');
-    dispatch(openBasket);
-    alert('213');
+    dispatch(openBasket());
   }
   return (
     <header>
