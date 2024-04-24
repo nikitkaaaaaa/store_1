@@ -27,7 +27,7 @@ const Electronics = () => {
       <div style={{border : '2px solid green',display : 'flex', flexDirection : 'column',marginBottom : '10px'}}>
       <div className='heading'>Refrigerators </div>
       <div className='products'>
-        {refrigerators.map(item => <div key={item.id} onClick={()=> addliked({id :item.id,price : item.id})}>
+        {refrigerators.map(item => <div key={item.id} onClick={()=> addliked({id :item.id,price : item.price,image : item.image})}>
           <>
             <img src={item.image} alt="" className='products_image'></img>
             <div style={{color : 'white'}}>Price : {item.price}$</div>
