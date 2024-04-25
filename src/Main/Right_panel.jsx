@@ -1,17 +1,26 @@
 import { useNavigate } from 'react-router-dom';
-import { useGetbasketQuery, useRemoveToBasketMutation } from "../redux/basket/basket";
+import { useAddbasketMutation, useGetbasketQuery, useRemoveToBasketMutation } from "../redux/basket/basket";
 import { useAddlikedMutation, useGetlikedQuery } from "../redux/liked/liked";
 import { useSelector } from "react-redux";
+import { useState } from 'react';
 const Right_panel = () => {
+   const [test,settest] = useState(1)
    const { data: liked = [] } = useGetlikedQuery();
    const [addliked] = useAddlikedMutation();
    const { data: basket = [] } = useGetbasketQuery()
    const stateBasket = useSelector(state => state.stateBasket.stateBasket);
    const [removeToBasket] = useRemoveToBasketMutation();
+   const [addbasket] = useAddbasketMutation()
    const total_price = basket.reduce((total, item) => total + item.price, 0);
    const navigate = useNavigate();
    const goHohe = () => {
       navigate('/');
+   }
+   const ttest = (item) => {
+      settest(test => test+=1);
+   }
+   const add_basket = (item) => {
+      addbasket({ id : item.id, image : item.image, price : item.price})
    }
    return (
       <>
@@ -20,21 +29,21 @@ const Right_panel = () => {
                <div style={{ border: '2px solid orange', width: '42%' }}>
                   {liked.map(item => <div key={item.id}>
                      <div>
-                        <img src={item.image} alt="" style={{ border: '2px solid blue' }} />
+                        <img src={item.image} alt="" style={{ border: '2px solid blue',width : '100%'}} />
                      </div>
                   </div>)}
                </div>
-               <div style={{ border: '2px solid green', width: '58%', height: '100%' }}>
+               <div style={{ border: '2px solid green', width: '58%', height: '100%'}}>
                   <div style={{ height: '100%' }}>
                      {liked.map(item => <div key={item.id}>
                         <>
-                           <div style={{ display: 'flex', border: '4px solid black', height: '100%' }}>
-                              <img src={item.image} alt="" style={{ width: '20%', height: '25%', border: '1px solid blue' }} />
-                              <div style={{ display: 'flex', flexDirection: 'column' }}>
+                           <div style={{ display: 'flex', border: '4px solid black' }}>
+                              <img src={item.image} alt="" style={{ width: '20%', border: '1px solid blue' }} />
+                              <div style={{ display: 'flex', flexDirection: 'column',paddingLeft : '2%'}}>
                                  <div>category : Refrigerators</div>
                                  <div>Price : {item.price}$</div>
                                  <button style={{ padding: '5px 0px' }}>add to liked</button>
-                                 <button style={{ padding: '5px 0px' }}>add to basket</button>
+                                 <button style={{ padding: '5px 0px' }} onClick={() => add_basket(item)}>add to basket</button>
                               </div>
                            </div>
                         </>
@@ -52,10 +61,10 @@ const Right_panel = () => {
                   </>
                </div>}
                <div>{basket.map(item => <div key={item.id}>
-                  <div style={{ border: '4px solid orange', display: 'flex', justifyContent: 'space-between', padding: '0% 2%', margin: '3% 0%' }}>
-                     <div style={{ border: '1px solid green', width: '30%', display: 'flex', alignItems: 'flex-start' }}>
+                  <div style={{ border: '4px solid orange', display: 'flex', justifyContent: 'space-between', padding: '1% 2%', margin: '3% 0%', alignItems : 'center'}}>
+                     <div style={{ border: '1px solid green', width: '30%', display: 'flex', alignItems: 'center' }}>
                         <div><img src={item.image} alt="" className="products_basket" /></div>
-                        <div style={{ display: 'flex', flexDirection: 'column', border: '1px solid', alignSelf: 'flex-start' }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', border: '1px solid', alignContent: 'center' }}>
                            <div>{item.id}</div>
                            <div>{item.category}</div>
                         </div>
@@ -64,8 +73,8 @@ const Right_panel = () => {
                         <div>{item.price}$</div>
                      </div>
                      <div>
-                        <button onClick={() => item.price * 2}>+</button>
-                        {1}
+                        <button onClick={() => ttest(item.price)}>+</button>
+                        {test}
                         <button>-</button>
                      </div>
                      <div>
@@ -76,7 +85,7 @@ const Right_panel = () => {
                      </div>
                   </div>
                </div>)}</div>
-               {basket.length >= 1 && <div>Total price : {total_price}</div>}
+               {basket.length >= 1 && <div>Total price : {total_price}$</div>}
             </div>}
       </>
    )

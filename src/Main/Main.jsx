@@ -6,20 +6,24 @@ import Electronics from '../componets/Electronics';
 import Shoes from '../componets/Shoes';
 import Default from '../componets/Default';
 import Right_panel from './Right_panel';
-// import { useGetbasketQuery } from '../redux/basket/basket';
+import { useDispatch } from 'react-redux';
+import { clouseBasket } from '../redux/states/states';
 const Main = () => {
-  //  const {data = []} = useGetbasketQuery();
+      const dispatch = useDispatch();
+      const clousebasket = () => {
+        dispatch(clouseBasket());
+      }
       return (
         <div >
           <div className='contenier'>
             <div className='left_panel'>
               <div style={{paddingBottom : '25px'}}>Category</div>
               <br />
-              <Link to='/clothes'>Clothes</Link>
+              <Link to='/clothes' onClick={clousebasket}>Clothes</Link>
               <br />
-              <Link to='/electronics'>Electronics</Link>
+              <Link to='/electronics' onClick={clousebasket}>Electronics</Link>
               <br />
-              <Link to='/shoes'>Shoes</Link>
+              <Link to='/shoes' onClick={clousebasket}>Shoes</Link>
             </div>
             <div className='right_panel'>
               <Right_panel/>

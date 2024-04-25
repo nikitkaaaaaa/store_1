@@ -8,8 +8,12 @@ export const states = createSlice({
         openBasket: (state) => ({
             ...state,
             stateBasket: true
+        }),
+        clouseBasket: (state) => ({
+            ...state,
+            stateBasket: false
         })
     }
 });
 export default states.reducer;
-export const { openBasket } = states.actions;
+export const { openBasket,clouseBasket } = states.actions;

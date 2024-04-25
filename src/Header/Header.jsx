@@ -3,12 +3,13 @@ import './Style_header.css';
 import { useNavigate } from 'react-router-dom';
 import './Style_app.css'
 import { useDispatch } from 'react-redux';
-import { openBasket } from '../redux/states/states';
+import { clouseBasket, openBasket } from '../redux/states/states';
 const Header = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const goHohe = () => {
     navigate('/');
+    dispatch(clouseBasket());
   }
   const back_to_basket = () => {
     navigate('/basket');
