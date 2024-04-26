@@ -18,7 +18,7 @@ const Right_panel = () => {
    const add_basket = (item) => {
       addbasket({ id: item.id, image: item.image, price: item.price })
    }
-   const test = liked.length > 0 ? liked[liked.length - 1] : null;
+   const test = liked.length > 0 ? liked[liked.length - 1 ] : null;
    return (
       <>
          {!stateBasket &&

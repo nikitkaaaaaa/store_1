@@ -1,29 +1,9 @@
 {
   "basket": [
     {
-      "id": "1332",
-      "image": "https://avatars.mds.yandex.net/i?id=b851dae7a0ca1a8afe0b2082f542f8f16cf6511e-9848182-images-thumbs&n=13",
-      "price": 45
-    },
-    {
-      "id": "132",
-      "image": "https://avatars.mds.yandex.net/i?id=1eb576cdb1addb727259cef60426c2afd0fb1995-12738621-images-thumbs&n=13",
-      "price": 52
-    },
-    {
-      "id": "1332",
-      "image": "https://avatars.mds.yandex.net/i?id=b851dae7a0ca1a8afe0b2082f542f8f16cf6511e-9848182-images-thumbs&n=13",
-      "price": 45
-    },
-    {
-      "id": "1s3dsf2",
-      "image": "https://avatars.mds.yandex.net/i?id=ce6a1e6eb29babcd7f601ed0eac177ad7a8468b2-8338869-images-thumbs&n=13",
-      "price": 40
-    },
-    {
-      "id": "1g3w2",
-      "image": "https://avatars.mds.yandex.net/i?id=f9c8287bb30caef4425d59debde271bb0edf7dc4-8497134-images-thumbs&n=13",
-      "price": 35
+      "id": "74398klds",
+      "image": "https://avatars.mds.yandex.net/i?id=574beb0b2f16c86795f94281001090affa8eadaf-10197150-images-thumbs&n=13",
+      "price": 66
     }
   ],
   "liked": [
@@ -33,9 +13,9 @@
       "price": 15
     },
     {
-      "id": "sdf132",
-      "price": 65,
-      "image": "https://avatars.mds.yandex.net/i?id=92a47d9a7654de106000571db260b54a2e1f36e3-10465270-images-thumbs&n=13"
+      "id": "74398klds",
+      "price": 66,
+      "image": "https://avatars.mds.yandex.net/i?id=574beb0b2f16c86795f94281001090affa8eadaf-10197150-images-thumbs&n=13"
     }
   ],
   "tshirt": [

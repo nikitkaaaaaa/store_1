@@ -29,7 +29,7 @@ const Clothes = () => {
       <div style={{ border: '2px solid green', display: 'flex', flexDirection: 'column', marginBottom: '10px' }}>
         <div className='heading'>Hoodies</div>
         <div className='products'>
-          {hoodies.map(item => <div key={item.id}>
+          {hoodies.map(item => <div key={item.id} onClick={()=> add_at_liked(item)}>
             <>
               <img src={item.image} alt="" className='products_image'></img>
               <div style={{ color: 'white' }}>Price : {item.price}$</div>
@@ -41,7 +41,7 @@ const Clothes = () => {
       <div style={{ border: '2px solid green', display: 'flex', flexDirection: 'column', marginBottom: '10px' }}>
         <div className='heading'>Tshirt</div>
         <div className='products'>
-          {tshirt.map(item => <div key={item.id}>
+          {tshirt.map(item => <div key={item.id} onClick={()=> add_at_liked(item)}>
             <>
               <img src={item.image} alt="" className='products_image'></img>
               <div style={{ color: 'white' }}>Price : {item.price}$</div>
@@ -52,7 +52,7 @@ const Clothes = () => {
       <div style={{ border: '2px solid green', display: 'flex', flexDirection: 'column', marginBottom: '10px' }}>
         <div className='heading'>Hats</div>
         <div className='products'>
-          {hats.map(item => <div key={item.id}>
+          {hats.map(item => <div key={item.id} onClick={()=> add_at_liked(item)}>
             <>
               <img src={item.image} alt="" className='products_image'></img>
               <div style={{ color: 'white' }}>Price : {item.price}$</div>
