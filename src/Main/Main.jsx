@@ -8,22 +8,23 @@ import Default from '../componets/Default';
 import Right_panel from './Right_panel';
 import { useDispatch } from 'react-redux';
 import { clouseBasket } from '../redux/states/states';
+import Basket from '../componets/Basket';
 const Main = () => {
       const dispatch = useDispatch();
       const clousebasket = () => {
         dispatch(clouseBasket());
       }
       return (
-        <div >
+        <div>
           <div className='contenier'>
             <div className='left_panel'>
-              <div style={{paddingBottom : '25px'}}>Category</div>
+              <div style={{paddingBottom : '25px',color : 'white'}}>Category</div>
               <br />
-              <Link to='/clothes' onClick={clousebasket}>Clothes</Link>
+              <Link to='/clothes' onClick={clousebasket} style={{color : 'grey',textDecoration : 'none'}}>Clothes</Link>
               <br />
-              <Link to='/electronics' onClick={clousebasket}>Electronics</Link>
+              <Link to='/electronics' onClick={clousebasket} style={{color : 'grey' ,textDecoration : 'none'}}>Electronics</Link>
               <br />
-              <Link to='/shoes' onClick={clousebasket}>Shoes</Link>
+              <Link to='/shoes' onClick={clousebasket} style={{color : 'grey', textDecoration : 'none'}}>Shoes</Link>
             </div>
             <div className='right_panel'>
               <Right_panel/>
@@ -34,6 +35,7 @@ const Main = () => {
             <Route path= '/electronics' element = {<Electronics/>}></Route>
             <Route path= '/shoes' element = {<Shoes/>}></Route>
             <Route path= '/' element = {<Default/>}></Route>
+            <Route path= '/basket' element = {<Basket/>}></Route>
           </Routes>
         </div>
       )

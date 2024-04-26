@@ -22,21 +22,25 @@ const Right_panel = () => {
    return (
       <>
          {!stateBasket &&
-            <div style={{ display: 'flex', border: '2px solid yellow', height: '100%' }}>
-               <div style={{ border: '2px solid orange', width: '42%' }}>
-                  {test && <img src={test.image} style={{ border: '2px solid blue', width: '70%' }}></img>}
+            <div style={{ display: 'flex',  height: '100%', background : 'black'}}>
+               <div style={{ width: '42%', padding : '1% 1% 0.5% 1%' }}>
+                  {test && <img src={test.image} style={{  width: '300px',height : '300px' }}></img>}
                </div>
-               <div style={{ border: '2px solid green', width: '58%', height: '100%' }}>
+               <div style={{ width : '100%' }}>
                   <div style={{ height: '100%' }}>
                      {test && (
-                        <div style={{ display: 'flex', border: '4px solid black' }}>
-                           <img src={test.image} alt="" style={{ width: '20%', border: '1px solid blue' }} />
-                           <div style={{ display: 'flex', flexDirection: 'column', paddingLeft: '2%' }}>
-                              <div>category : Refrigerators</div>
-                              <div>Price : {test.price}$</div>
-                              <button style={{ padding: '5px 0px' }}>add to liked</button>
-                              <button style={{ padding: '5px 0px' }} onClick={() => add_basket(test)}>add to basket</button>
+                        <div style={{display : 'flex', flexDirection : 'column'}}>
+                        <div style={{ display: 'flex',paddingLeft :'1%' }}>
+                           <img src={test.image} alt="" style={{ width: '100px', height : "100px",paddingTop : '1.8%'}} />
+                           <div style={{ display: 'flex', flexDirection: 'column', padding : '1% 0% 0% 2%'}}>
+                              <div style={{color : 'white'}}>category : Refrigerators</div>
+                              <div style={{color : 'white'}}>Price : {test.price}$</div>
                            </div>
+                        </div>
+                        <div style={{display : 'flex',justifyContent : 'center',marginTop : '10%'}}>
+                            <button className='addBasket' onClick={() => add_basket(test)}>Add to basket</button>
+                            <button className='addliked'>Add to liked</button>
+                        </div>
                         </div>
                      )}
                   </div>
@@ -48,36 +52,29 @@ const Right_panel = () => {
                {basket.length >= 1 && <div style={{ textAlign: 'center', padding: '2% 0%' }}>Your cart</div>}
                {!basket.length >= 1 && <div style={{ textAlign: 'center', padding: '2% 0%' }}>
                   <>
-                     <div>The basket is empty</div>
-                     <div><span onClick={goHohe}>Go to shopping</span></div>
+                     <div style={{color : 'white'}}>The basket is empty</div>
+                     <div style={{color : 'white'}}><span onClick={goHohe}>Go to shopping</span></div>
                   </>
                </div>}
                <div>{basket.map(item => <div key={item.id}>
-                  <div style={{ border: '4px solid orange', display: 'flex', justifyContent: 'space-between', padding: '1% 2%', margin: '3% 0%', alignItems: 'center' }}>
-                     <div style={{ border: '1px solid green', width: '30%', display: 'flex', alignItems: 'center' }}>
+                  <div style={{  borderRadius : '5px',display: 'flex', justifyContent: "space-between", padding: '1% 0%', margin: '3% 0%', alignItems: 'center',
+                   background : 'rgb(78, 78, 78)'}}>
+                     <div style={{ border: '1px solid green', width: '30%', display: 'flex', alignItems: 'center', paddingLeft : '2%'}}>
                         <div><img src={item.image} alt="" className="products_basket" /></div>
                         <div style={{ display: 'flex', flexDirection: 'column', border: '1px solid', alignContent: 'center' }}>
-                           <div>{item.id}</div>
-                           <div>{item.category}</div>
+                           <div style={{color : 'white'}}>{item.id}</div>
+                           <div style={{color : 'white'}}>{item.category}</div>
                         </div>
                      </div>
                      <div>
-                        <div>{item.price}$</div>
+                        <div style={{color : 'white'}}>{item.price}$</div>
                      </div>
                      <div>
-                        <button>+</button>
-                        {1}
-                        <button>-</button>
-                     </div>
-                     <div>
-                        {item.price}
-                     </div>
-                     <div onClick={() => removeToBasket(item.id)}>
-                        -
+                        <img src="https://cdn-icons-png.flaticon.com/128/458/458595.png" alt="" className='image_header' onClick={() => removeToBasket(item.id)}/>
                      </div>
                   </div>
                </div>)}</div>
-               {basket.length >= 1 && <div>Total price : {total_price}$</div>}
+               {basket.length >= 1 && <div style={{color : 'white'}}>Total price : {total_price}$</div>}
             </div>}
       </>
    )

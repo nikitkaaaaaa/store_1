@@ -1,5 +1,6 @@
 .image_header{
     width: 15%;
+    padding-left: 70%;
 }
 header{
     display : flex;

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Default = () => {
   return (
-    <div>
+    <div style={{height : '60vh'}}>
       Default
     </div>
   )
