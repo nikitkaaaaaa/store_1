@@ -16,13 +16,14 @@ const Right_panel = () => {
       navigate('/');
    }
    const add_basket = (item) => {
-      addbasket({ id: item.id, image: item.image, price: item.price })
+      addbasket({ id: item.id, image: item.image, price: item.price, category : item.category, color : item.color})
    }
    const test = liked.length > 0 ? liked[liked.length - 1 ] : null;
+   const statesale = useSelector(state => state.statesale.statesale)
    return (
       <>
-         {!stateBasket &&
-         // <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9LGOHJNx03N21dJwzCdmV81SXTgegSQ016Q&s" alt="" style={{width:'100%',height:'100%',objectFit : "cover"}}/>
+         {statesale && <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIwv9VZTTYoIGZqXY9uEVUISQ8iQ71gR1OFA&s" alt="" style={{width : '100%' , height : '350px', border : '1px solid green'}}/>}
+         {!stateBasket && !statesale &&
             <div style={{ display: 'flex',  height: '100%', background : 'black',border : '1px solid yellow'}}>
                <div style={{ width: '42%', padding : '1% 1% 0.5% 1%' }}>
                   {test && <img src={test.image} style={{  width: '300px',height : '300px' }}></img>}
@@ -34,8 +35,11 @@ const Right_panel = () => {
                         <div style={{ display: 'flex',paddingLeft :'1%' }}>
                            <img src={test.image} alt="" style={{ width: '100px', height : "100px",paddingTop : '1.8%'}} />
                            <div style={{ display: 'flex', flexDirection: 'column', padding : '1% 0% 0% 2%'}}>
-                              <div style={{color : 'white'}}>category : Refrigerators</div>
-                              <div style={{color : 'white'}}>Price : {test.price}$</div>
+                           <div style={{ color: 'white' }}>Category : {test.category}</div>
+                           <br />
+                           <div style={{ color: 'white' }}>Color : {test.color}</div>
+                           <br />
+                           <div style={{ color: 'purple' }}>Price : {test.price}$</div>
                            </div>
                         </div>
                         <div style={{display : 'flex',justifyContent : 'center',marginTop : '10%'}}>
@@ -62,13 +66,14 @@ const Right_panel = () => {
                    background : 'rgb(78, 78, 78)'}}>
                      <div style={{  width: '30%', display: 'flex', alignItems: 'center', paddingLeft : '2%'}}>
                         <div><img src={item.image} alt="" className="products_basket" /></div>
-                        <div style={{ display: 'flex', flexDirection: 'column',  alignContent: 'center' }}>
-                           <div style={{color : 'white'}}>{item.id}</div>
+                        <div style={{ display: 'flex', flexDirection: 'column',  alignContent: 'center', border : '1px solid'}}>
                            <div style={{color : 'white'}}>{item.category}</div>
+                           <br />
+                           <div style={{color : 'white'}}>Color : {item.color}</div>
                         </div>
                      </div>
                      <div>
-                        <div style={{color : 'white'}}>{item.price}$</div>
+                        <div style={{color : 'purple'}}>{item.price}$</div>
                      </div>
                      <div>
                         <img src="https://cdn-icons-png.flaticon.com/128/458/458595.png" alt="" className='image_basket' onClick={() => removeToBasket(item.id)}/>

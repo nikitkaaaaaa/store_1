@@ -4,14 +4,18 @@ import { useGetsummer_shoesQuery } from '../redux/shoes/summer_shoes';
 import { useGetautumn_shoesQuery } from '../redux/shoes/automn_shoes';
 import { useGetspring_shoesQuery } from '../redux/shoes/spring_shoes';
 import { useAddlikedMutation } from '../redux/liked/liked';
+import { clousesale } from '../redux/states/states';
+import { useDispatch } from 'react-redux';
 const Shoes = () => {
   const { data: summer = [] } = useGetsummer_shoesQuery();
   const { data: autom = [] } = useGetautumn_shoesQuery();
   const { data: winter = [] } = useGetwinter_shoesQuery();
   const { data: spring = [] } = useGetspring_shoesQuery();
   const [addliked] = useAddlikedMutation();
+  const dispatch = useDispatch();
   const add_at_liked = (item) => {
-    addliked({id : item.id,price : item.price,image : item.image});
+    addliked({id : item.id,price : item.price,image : item.image, category : item.category, color : item.color});
+    dispatch(clousesale());
   }
   return (
     <div className='page_products'>
@@ -20,8 +24,13 @@ const Shoes = () => {
         <div className='products'>
           {summer.map(item => <div key={item.id} onClick={()=> add_at_liked(item)}>
             <>
-              <img src={item.image} alt="" className='products_image'></img>
-              <div style={{ color: 'white' }}>Price : {item.price}$</div>
+            <img src={item.image} alt="" className='products_image'></img>
+            <br />
+              <div style={{ color: 'white' }}>Category : {item.category}</div>
+              <br />
+              <div style={{ color: 'white' }}>Color : {item.color}</div>
+              <br />
+              <div style={{ color: 'purple' }}>Price : {item.price}$</div>
             </>
           </div>)}
         </div>
@@ -31,9 +40,13 @@ const Shoes = () => {
         <div className='products'>
           {autom.map(item => <div key={item.id} onClick={()=> add_at_liked(item)}>
             <>
-              <img src={item.image} alt="" className='products_image'></img>
-              <div style={{ color: 'white' }}>Price : {item.price}$</div>
-              <div style={{ color: 'white' }}>{item.id}</div>
+            <img src={item.image} alt="" className='products_image'></img>
+            <br />
+              <div style={{ color: 'white' }}>Category : {item.category}</div>
+              <br />
+              <div style={{ color: 'white' }}>Color : {item.color}</div>
+              <br />
+              <div style={{ color: 'purple' }}>Price : {item.price}$</div>
             </>
           </div>)}
         </div>
@@ -43,8 +56,13 @@ const Shoes = () => {
         <div className='products'>
           {winter.map(item => <div key={item.id} onClick={()=> add_at_liked(item)}>
             <>
-              <img src={item.image} alt="" className='products_image'></img>
-              <div style={{ color: 'white' }}>Price : {item.price}$</div>
+            <img src={item.image} alt="" className='products_image'></img>
+            <br />
+              <div style={{ color: 'white' }}>Category : {item.category}</div>
+              <br />
+              <div style={{ color: 'white' }}>Color : {item.color}</div>
+              <br />
+              <div style={{ color: 'purple' }}>Price : {item.price}$</div>
             </>
           </div>)}
         </div>
@@ -54,8 +72,13 @@ const Shoes = () => {
         <div className='products'>
           {spring.map(item => <div key={item.id} onClick={()=> add_at_liked(item)}>
             <>
-              <img src={item.image} alt="" className='products_image'></img>
-              <div style={{ color: 'white' }}>Price : {item.price}$</div>
+            <img src={item.image} alt="" className='products_image'></img>
+            <br />
+              <div style={{ color: 'white' }}>Category : {item.category}</div>
+              <br />
+              <div style={{ color: 'white' }}>Color : {item.color}</div>
+              <br />
+              <div style={{ color: 'purple' }}>Price : {item.price}$</div>
             </>
           </div>)}
         </div>
