@@ -16,7 +16,7 @@ const Electronics = () => {
   }
   return (
     <div className='page_products'>
-      <div style={{ border: '2px solid blue', display: 'flex', flexDirection: 'column', marginBottom: '20px' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '20px' }}>
         <div className='heading'>Washing mashines</div>
         <div className='products'>
           {washing_mashines.map(item => <div key={item.id} onClick={()=> add_at_liked(item)}>
@@ -27,7 +27,7 @@ const Electronics = () => {
           </div>)}
         </div>
       </div>
-      <div style={{ border: '2px solid green', display: 'flex', flexDirection: 'column', marginBottom: '10px' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '10px' }}>
         <div className='heading'>Refrigerators </div>
         <div className='products'>
           {refrigerators.map(item => <div key={item.id} onClick={()=> add_at_liked(item)}>
@@ -39,7 +39,7 @@ const Electronics = () => {
           </div>)}
         </div>
       </div>
-      <div style={{ border: '2px solid green', display: 'flex', flexDirection: 'column', marginBottom: '10px' }}>
+      <div style={{  display: 'flex', flexDirection: 'column', marginBottom: '10px' }}>
         <div className='heading'>Televisions  </div>
         <div className='products'>
           {televisions.map(item => <div key={item.id} onClick={()=> add_at_liked(item)}>
@@ -50,7 +50,7 @@ const Electronics = () => {
           </div>)}
         </div>
       </div>
-      <div style={{ border: '2px solid green', display: 'flex', flexDirection: 'column', marginBottom: '10px' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '10px' }}>
         <div className='heading'>Microwave ovens </div>
         <div className='products'>
           {microwave_ovens.map(item => <div key={item.id}>

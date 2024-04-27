@@ -1,128 +1,58 @@
 {
   "basket": [
     {
-      "id": "we2341",
-      "image": "https://avatars.mds.yandex.net/i?id=1af79d7566e54916f3ababfa43a86529f1dbfe89-9148863-images-thumbs&n=13",
-      "price": 93
+      "id": "44444",
+      "image": "https://avatars.mds.yandex.net/i?id=4488bb668bc32656f8bc6060cb89a5f0139e4435-11270328-images-thumbs&n=13",
+      "price": 90
     },
     {
-      "id": "trieo8956",
-      "image": "https://avatars.mds.yandex.net/i?id=7cf91f454d2c66188993d602a4fac876959d8fe6-10574297-images-thumbs&n=13",
-      "price": 199
+      "id": "88884395df",
+      "image": "https://avatars.mds.yandex.net/i?id=fc0a88601b37dd2c45211c89944112c41c44f750-12473993-images-thumbs&n=13",
+      "price": 310
     },
     {
-      "id": "943598dfg",
-      "image": "https://avatars.mds.yandex.net/i?id=78a5560c6b2e3fdc1f18a8b6b72e37f2be49ae2a-5865789-images-thumbs&n=13",
-      "price": 555
+      "id": "8sdf90",
+      "image": "https://avatars.mds.yandex.net/i?id=7a5059e0c6404682c916e86c07425e2551e5c5fc-10207868-images-thumbs&n=13",
+      "price": 222
     }
   ],
   "liked": [
-    {
-      "id": "sdf132",
-      "price": 65,
-      "image": "https://avatars.mds.yandex.net/i?id=92a47d9a7654de106000571db260b54a2e1f36e3-10465270-images-thumbs&n=13"
-    },
-    {
-      "id": "1s3dsf2",
-      "price": 40,
-      "image": "https://avatars.mds.yandex.net/i?id=ce6a1e6eb29babcd7f601ed0eac177ad7a8468b2-8338869-images-thumbs&n=13"
-    },
-    {
-      "id": "132",
-      "price": 52,
-      "image": "https://avatars.mds.yandex.net/i?id=1eb576cdb1addb727259cef60426c2afd0fb1995-12738621-images-thumbs&n=13"
-    },
-    {
-      "id": "1g3w2",
-      "price": 35,
-      "image": "https://avatars.mds.yandex.net/i?id=f9c8287bb30caef4425d59debde271bb0edf7dc4-8497134-images-thumbs&n=13"
-    },
-    {
-      "id": "1sda23",
-      "price": 43,
-      "image": "https://avatars.mds.yandex.net/i?id=f4600be0d2c4ffccbb7e49d14d7622e4-4377652-images-thumbs&n=13"
-    },
-    {
-      "id": "1fedfg43",
-      "price": 35,
-      "image": "https://avatars.mds.yandex.net/i?id=f3041fa0e553313e74a054bfca62c5d00e3c6836-12528274-images-thumbs&n=13"
-    },
-    {
-      "id": "12g3",
-      "price": 89,
-      "image": "https://avatars.mds.yandex.net/i?id=e4237be4fcd1d2843f181876591d8f0d142942e4-12500667-images-thumbs&n=13"
-    },
-    {
-      "id": "1332",
-      "price": 45,
-      "image": "https://avatars.mds.yandex.net/i?id=b851dae7a0ca1a8afe0b2082f542f8f16cf6511e-9848182-images-thumbs&n=13"
-    },
-    {
-      "id": "74398klds",
-      "price": 66,
-      "image": "https://avatars.mds.yandex.net/i?id=574beb0b2f16c86795f94281001090affa8eadaf-10197150-images-thumbs&n=13"
-    },
-    {
-      "id": "8w9er7db",
-      "price": 90,
-      "image": "https://avatars.mds.yandex.net/i?id=3a337d4367317690f4d8552e63783c3081b7b54d-10092505-images-thumbs&n=13"
-    },
-    {
-      "id": "sdf132",
-      "price": 65,
-      "image": "https://avatars.mds.yandex.net/i?id=92a47d9a7654de106000571db260b54a2e1f36e3-10465270-images-thumbs&n=13"
-    },
-    {
-      "id": "1d23",
-      "price": 66,
-      "image": "https://avatars.mds.yandex.net/i?id=72ccf6c52dfefc3160315e5965ccd54b8e2121d0-12523300-images-thumbs&n=13"
-    },
     {
       "id": "88884395df",
       "price": 310,
       "image": "https://avatars.mds.yandex.net/i?id=fc0a88601b37dd2c45211c89944112c41c44f750-12473993-images-thumbs&n=13"
     },
     {
-      "id": "rweopri3r9653",
-      "price": 150,
-      "image": "https://avatars.mds.yandex.net/i?id=7c7d03312a03c646969d553c6e58cdb8447ae878-4379030-images-thumbs&n=13"
+      "id": "8sdf90",
+      "price": 222,
+      "image": "https://avatars.mds.yandex.net/i?id=7a5059e0c6404682c916e86c07425e2551e5c5fc-10207868-images-thumbs&n=13"
     },
     {
-      "id": "we2341",
-      "price": 93,
-      "image": "https://avatars.mds.yandex.net/i?id=1af79d7566e54916f3ababfa43a86529f1dbfe89-9148863-images-thumbs&n=13"
-    },
-    {
-      "id": "trieo8956",
-      "price": 199,
-      "image": "https://avatars.mds.yandex.net/i?id=7cf91f454d2c66188993d602a4fac876959d8fe6-10574297-images-thumbs&n=13"
-    },
-    {
-      "id": "943598dfg",
-      "price": 555,
-      "image": "https://avatars.mds.yandex.net/i?id=78a5560c6b2e3fdc1f18a8b6b72e37f2be49ae2a-5865789-images-thumbs&n=13"
-    },
-    {
-      "id": "gosdfo4",
-      "price": 270,
-      "image": "https://avatars.mds.yandex.net/i?id=6f3efb9e61e8e1821180818d9d29eac7c8ae002d-10414202-images-thumbs&n=13"
+      "id": "fdlg",
+      "price": 45,
+      "image": "https://avatars.mds.yandex.net/i?id=ecd1f0f4346450c48fb47739801deec35e3f2d03-10151263-images-thumbs&n=13"
     }
   ],
   "tshirt": [
     {
       "id": "13332",
       "price": 45,
-      "image": "https://avatars.mds.yandex.net/i?id=b851dae7a0ca1a8afe0b2082f542f8f16cf6511e-9848182-images-thumbs&n=13"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNrzWYxsK8T7pQYHdu31GBicz_b2hpJ3-tGw&s"
     },
     {
       "id": "1312332",
       "price": 45,
-      "image": "https://avatars.mds.yandex.net/i?id=b851dae7a0ca1a8afe0b2082f542f8f16cf6511e-9848182-images-thumbs&n=13"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4kRJ79v9ZTjtxKQP8TaqzjCgpmyZg6et5Fg&s"
     },
     {
       "id": "1332432",
       "price": 45,
-      "image": "https://avatars.mds.yandex.net/i?id=b851dae7a0ca1a8afe0b2082f542f8f16cf6511e-9848182-images-thumbs&n=13"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVD8iP61mWln9OeIY9vNLeXyZANTpCPoJyIg&s"
+    },
+    {
+      "id": "13332432",
+      "price": 45,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVD8iP61mWln9OeIY9vNLeXyZANTpCPoJyIg&s"
     }
   ],
   "pants": [
