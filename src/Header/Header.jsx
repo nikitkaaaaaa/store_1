@@ -3,25 +3,25 @@ import './Style_header.css';
 import { useNavigate } from 'react-router-dom';
 import './Style_app.css'
 import { useDispatch } from 'react-redux';
-import { clouseBasket, openBasket, opensale } from '../redux/states/states';
+import { clousesale, openBasket, opensale } from '../redux/states/states';
 const Header = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const goHohe = () => {
     navigate('/');
-    dispatch(clouseBasket());
     dispatch(opensale());
   }
   const back_to_basket = () => {
     navigate('/basket');
     dispatch(openBasket());
+    dispatch(clousesale());
   }
   return (
     <header>
-      <div onClick={goHohe}><img src="https://cdn-icons-png.flaticon.com/128/12891/12891793.png" alt="" className='image_header'/></div>
-      <div style={{display : 'flex'}}>
-        <div style={{border : '1px solid'}}><img className='image_header' src="https://cdn-icons-png.flaticon.com/128/7516/7516107.png" alt="" /></div>
-        <div style={{border : '1px solid'}}><img  className='image_header' src="https://cdn-icons-png.flaticon.com/128/13066/13066269.png" onClick={back_to_basket}/></div>
+      <div onClick={goHohe}>+</div>
+      <div style={{ display: 'flex', border: '1px solid pink' }}>
+        <div style={{ border: '1px solid' }}><img className='image_header' src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png" alt="" /></div>
+        <div style={{ border: '1px solid' }}><img className='image_header' src="https://cdn-icons-png.flaticon.com/128/711/711897.png" onClick={back_to_basket} /></div>
       </div>
     </header>
   )

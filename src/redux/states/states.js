@@ -3,7 +3,7 @@ export const states = createSlice({
     name: 'states',
     initialState: {
         stateBasket: false,
-        statesale : false,
+        statesale : true,
     },
     reducers: {
         openBasket: (state) => ({

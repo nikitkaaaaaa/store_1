@@ -14,7 +14,7 @@ const Shoes = () => {
   const [addliked] = useAddlikedMutation();
   const dispatch = useDispatch();
   const add_at_liked = (item) => {
-    addliked({id : item.id,price : item.price,image : item.image, category : item.category, color : item.color});
+    addliked({ id: item.id, price: item.price, image: item.image, category: item.category, color: item.color });
     dispatch(clousesale());
   }
   return (
@@ -22,15 +22,19 @@ const Shoes = () => {
       <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '20px' }}>
         <div className='heading'>Summer shoes</div>
         <div className='products'>
-          {summer.map(item => <div key={item.id} onClick={()=> add_at_liked(item)}>
+          {summer.map(item => <div key={item.id} onClick={() => add_at_liked(item)} style={{display : 'flex', justifyContent : "center",paddingTop : '10%'}}>
             <>
-            <img src={item.image} alt="" className='products_image'></img>
-            <br />
-              <div style={{ color: 'white' }}>Category : {item.category}</div>
-              <br />
-              <div style={{ color: 'white' }}>Color : {item.color}</div>
-              <br />
-              <div style={{ color: 'purple' }}>Price : {item.price}$</div>
+              <div style={{ display: 'flex', flexDirection: 'column', width: '90%', borderRadius: '10px', background: 'rgb(33,32,35,255)' }}>
+                <img src={item.image} alt="" className='products_image'></img>
+                <br />
+                <div style={{ padding: '0px 0px 30px 10px' }}>
+                  <div style={{ color: 'white' }}>Category : {item.category}</div>
+                  <br />
+                  <div style={{ color: 'white' }}>Color : {item.color}</div>
+                  <br />
+                  <div style={{ color: 'purple' }}>Price : {item.price}$</div>
+                </div>
+              </div>
             </>
           </div>)}
         </div>
@@ -38,15 +42,19 @@ const Shoes = () => {
       <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '10px' }}>
         <div className='heading'>Autom shoes</div>
         <div className='products'>
-          {autom.map(item => <div key={item.id} onClick={()=> add_at_liked(item)}>
+          {autom.map(item => <div key={item.id} onClick={() => add_at_liked(item)} style={{display : 'flex', justifyContent : "center",paddingTop : '10%'}}>
             <>
-            <img src={item.image} alt="" className='products_image'></img>
-            <br />
-              <div style={{ color: 'white' }}>Category : {item.category}</div>
-              <br />
-              <div style={{ color: 'white' }}>Color : {item.color}</div>
-              <br />
-              <div style={{ color: 'purple' }}>Price : {item.price}$</div>
+              <div style={{ display: 'flex', flexDirection: 'column', width: '90%', borderRadius: '10px', background: 'rgb(33,32,35,255)' }}>
+                <img src={item.image} alt="" className='products_image'></img>
+                <br />
+                <div style={{ padding: '0px 0px 30px 10px' }}>
+                  <div style={{ color: 'white' }}>Category : {item.category}</div>
+                  <br />
+                  <div style={{ color: 'white' }}>Color : {item.color}</div>
+                  <br />
+                  <div style={{ color: 'purple' }}>Price : {item.price}$</div>
+                </div>
+              </div>
             </>
           </div>)}
         </div>
@@ -54,15 +62,19 @@ const Shoes = () => {
       <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '10px' }}>
         <div className='heading'>Winter shoes</div>
         <div className='products'>
-          {winter.map(item => <div key={item.id} onClick={()=> add_at_liked(item)}>
+          {winter.map(item => <div key={item.id} onClick={() => add_at_liked(item)} style={{display : 'flex', justifyContent : "center",paddingTop : '10%'}}>
             <>
-            <img src={item.image} alt="" className='products_image'></img>
-            <br />
-              <div style={{ color: 'white' }}>Category : {item.category}</div>
-              <br />
-              <div style={{ color: 'white' }}>Color : {item.color}</div>
-              <br />
-              <div style={{ color: 'purple' }}>Price : {item.price}$</div>
+              <div style={{ display: 'flex', flexDirection: 'column', width: '90%', borderRadius: '10px', background: 'rgb(33,32,35,255)' }}>
+                <img src={item.image} alt="" className='products_image'></img>
+                <br />
+                <div style={{ padding: '0px 0px 30px 10px' }}>
+                  <div style={{ color: 'white' }}>Category : {item.category}</div>
+                  <br />
+                  <div style={{ color: 'white' }}>Color : {item.color}</div>
+                  <br />
+                  <div style={{ color: 'purple' }}>Price : {item.price}$</div>
+                </div>
+              </div>
             </>
           </div>)}
         </div>
@@ -70,15 +82,18 @@ const Shoes = () => {
       <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '10px' }}>
         <div className='heading'>Spring ovens </div>
         <div className='products'>
-          {spring.map(item => <div key={item.id} onClick={()=> add_at_liked(item)}>
-            <>
-            <img src={item.image} alt="" className='products_image'></img>
-            <br />
-              <div style={{ color: 'white' }}>Category : {item.category}</div>
+          {spring.map(item => <div key={item.id} onClick={() => add_at_liked(item)} style={{display : 'flex', justifyContent : "center",paddingTop : '10%'}}>
+            <> <div style={{ display: 'flex', flexDirection: 'column', width: '90%', borderRadius: '10px', background: 'rgb(33,32,35,255)' }}>
+              <img src={item.image} alt="" className='products_image'></img>
               <br />
-              <div style={{ color: 'white' }}>Color : {item.color}</div>
-              <br />
-              <div style={{ color: 'purple' }}>Price : {item.price}$</div>
+              <div style={{ padding: '0px 0px 30px 10px' }}>
+                <div style={{ color: 'white' }}>Category : {item.category}</div>
+                <br />
+                <div style={{ color: 'white' }}>Color : {item.color}</div>
+                <br />
+                <div style={{ color: 'purple' }}>Price : {item.price}$</div>
+              </div>
+            </div>
             </>
           </div>)}
         </div>

@@ -22,13 +22,17 @@ const Default = () => {
         <div className='products'>
           {jewelry.map(item => <div key={item.id} onClick={()=> add_at_liked(item)}>
             <>
+           <div>
+           <div style={{width : '100%', height : '100%', border : '5px solid green'}}>
             <img src={item.image} alt="" className='products_image'></img>
-            <br />
-              <div style={{ color: 'white' }}>Category : {item.category}</div>
               <br />
-              <div style={{ color: 'white' }}>Meatal : {item.metal}</div>
-              <br />
-              <div style={{ color: 'purple' }}>Price : {item.price}$</div>
+                <div style={{ color: 'white' }}>Category : {item.category}</div>
+                <br />
+                <div style={{ color: 'white' }}>Meatal : {item.metal}</div>
+                <br />
+                <div style={{ color: 'purple' }}>Price : {item.price}$</div>
+           </div>
+           </div>
             </>
           </div>)}
         </div>
