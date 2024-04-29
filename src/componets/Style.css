@@ -5,7 +5,7 @@
     background: black;
     padding: 0% 1% 2%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1%;
 }
 .products_image {
@@ -19,4 +19,8 @@
     font-size: 24px;
     padding: 2% 0% 0% 0%;
     background: black;
+}
+.image_footer{
+    width: 30px;
+    height: 30px;
 }

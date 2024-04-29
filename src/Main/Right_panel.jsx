@@ -63,7 +63,7 @@ const Right_panel = () => {
                </div>}
                <div style={{border : '1px solid green',overflowY : 'scroll'}}>{basket.map(item => <div key={item.id}>
                   <div style={{  borderRadius : '5px',display: 'flex', justifyContent: "space-between", margin: '3% 0%', alignItems: 'center',
-                   background : 'rgb(78, 78, 78)'}}>
+                   background : 'rgb(33,32,35,255)'}}>
                      <div style={{  width: '30%', display: 'flex', alignItems: 'center', paddingLeft : '2%'}}>
                         <div><img src={item.image} alt="" className="products_basket" /></div>
                         <div style={{ display: 'flex', flexDirection: 'column',  alignContent: 'center', border : '1px solid'}}>

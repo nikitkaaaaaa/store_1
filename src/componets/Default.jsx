@@ -20,19 +20,19 @@ const Default = () => {
       <div style={{  display: 'flex', flexDirection: 'column', marginBottom: '20px' }}>
         <div className='heading'>Jewelry</div>
         <div className='products'>
-          {jewelry.map(item => <div key={item.id} onClick={()=> add_at_liked(item)}>
+          {jewelry.map(item => <div key={item.id} onClick={()=> add_at_liked(item)} style={{display : 'flex', justifyContent : "center",paddingTop : '10%'}}>
             <>
-           <div>
-           <div style={{width : '100%', height : '100%', border : '5px solid green'}}>
-            <img src={item.image} alt="" className='products_image'></img>
-              <br />
-                <div style={{ color: 'white' }}>Category : {item.category}</div>
+            <div style={{ display: 'flex', flexDirection: 'column', width: '90%', borderRadius: '10px', background: 'rgb(33,32,35,255)' }}>
+                <img src={item.image} alt="" className='products_image'></img>
                 <br />
-                <div style={{ color: 'white' }}>Meatal : {item.metal}</div>
-                <br />
-                <div style={{ color: 'purple' }}>Price : {item.price}$</div>
-           </div>
-           </div>
+                <div style={{ padding: '0px 0px 30px 10px' }}>
+                  <div style={{ color: 'white' }}>Category : {item.category}</div>
+                  <br />
+                  <div style={{ color: 'white' }}>Color : {item.color}</div>
+                  <br />
+                  <div style={{ color: 'purple' }}>Price : {item.price}$</div>
+                </div>
+              </div>
             </>
           </div>)}
         </div>
@@ -40,15 +40,19 @@ const Default = () => {
       <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '10px' }}>
         <div className='heading'>Headphones</div>
         <div className='products'>
-          {headphones.map(item => <div key={item.id} onClick={()=> add_at_liked(item)}>
+          {headphones.map(item => <div key={item.id} onClick={()=> add_at_liked(item)} style={{display : 'flex', justifyContent : "center",paddingTop : '10%'}}>
             <>
-            <img src={item.image} alt="" className='products_image'></img>
-            <br />
-              <div style={{ color: 'white' }}>Category : {item.category}</div>
-              <br />
-              <div style={{ color: 'white' }}>Color : {item.color}</div>
-              <br />
-              <div style={{ color: 'purple' }}>Price : {item.price}$</div>
+            <div style={{ display: 'flex', flexDirection: 'column', width: '90%', borderRadius: '10px', background: 'rgb(33,32,35,255)' }}>
+                <img src={item.image} alt="" className='products_image'></img>
+                <br />
+                <div style={{ padding: '0px 0px 30px 10px' }}>
+                  <div style={{ color: 'white' }}>Category : {item.category}</div>
+                  <br />
+                  <div style={{ color: 'white' }}>Color : {item.color}</div>
+                  <br />
+                  <div style={{ color: 'purple' }}>Price : {item.price}$</div>
+                </div>
+              </div>
             </>
           </div>)}
         </div>
@@ -56,15 +60,19 @@ const Default = () => {
       <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '10px' }}>
         <div className='heading'>Kitchen items</div>
         <div className='products'>
-          {kitchen_items.map(item => <div key={item.id} onClick={()=> add_at_liked(item)}>
+          {kitchen_items.map(item => <div key={item.id} onClick={()=> add_at_liked(item)} style={{display : 'flex', justifyContent : "center",paddingTop : '10%'}}>
             <>
-            <img src={item.image} alt="" className='products_image'></img>
-            <br />
-              <div style={{ color: 'white' }}>Category : {item.category}</div>
-              <br />
-              <div style={{ color: 'white' }}>Color : {item.color}</div>
-              <br />
-              <div style={{ color: 'purple' }}>Price : {item.price}$</div>
+            <div style={{ display: 'flex', flexDirection: 'column', width: '90%', borderRadius: '10px', background: 'rgb(33,32,35,255)' }}>
+                <img src={item.image} alt="" className='products_image'></img>
+                <br />
+                <div style={{ padding: '0px 0px 30px 10px' }}>
+                  <div style={{ color: 'white' }}>Category : {item.category}</div>
+                  <br />
+                  <div style={{ color: 'white' }}>Color : {item.color}</div>
+                  <br />
+                  <div style={{ color: 'purple' }}>Price : {item.price}$</div>
+                </div>
+              </div>
             </>
           </div>)}
         </div>

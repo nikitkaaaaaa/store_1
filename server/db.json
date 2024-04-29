@@ -36,6 +36,20 @@
       "image": "https://avatars.mds.yandex.net/i?id=1af79d7566e54916f3ababfa43a86529f1dbfe89-9148863-images-thumbs&n=13",
       "category": "autumn shoes",
       "color": "red and orange"
+    },
+    {
+      "id": "sdf132",
+      "price": 65,
+      "image": "https://avatars.mds.yandex.net/i?id=92a47d9a7654de106000571db260b54a2e1f36e3-10465270-images-thumbs&n=13",
+      "category": "pants",
+      "color": "black"
+    },
+    {
+      "id": "8sdf90",
+      "price": 222,
+      "image": "https://avatars.mds.yandex.net/i?id=7a5059e0c6404682c916e86c07425e2551e5c5fc-10207868-images-thumbs&n=13",
+      "category": "refrigerators",
+      "color": "red"
     }
   ],
   "tshirt": [
