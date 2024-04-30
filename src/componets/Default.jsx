@@ -12,7 +12,7 @@ const Default = () => {
   const [addliked] = useAddlikedMutation();
   const dispatch = useDispatch();
   const add_at_liked = (item) => {
-    addliked({id : item.id,price : item.price,image : item.image, category : item.category, color : item.color});
+    addliked({id : item.id,old_price : item.old_price,image : item.image, category : item.category, color : item.color, new_price : item.new_price});
     dispatch(clousesale());
   }
   return (
@@ -30,7 +30,10 @@ const Default = () => {
                   <br />
                   <div style={{ color: 'white' }}>Color : {item.color}</div>
                   <br />
-                  <div style={{ color: 'purple' }}>Price : {item.price}$</div>
+                  <div style={{display : 'flex'}}>
+                    <div style={{ color: 'purple' }}>Price : {item.new_price}$</div>
+                    <div style={{ color: 'gray', paddingLeft : '15px' ,textDecoration : "line-through"}}>{item.old_price}$</div>
+                  </div>
                 </div>
               </div>
             </>
@@ -50,7 +53,10 @@ const Default = () => {
                   <br />
                   <div style={{ color: 'white' }}>Color : {item.color}</div>
                   <br />
-                  <div style={{ color: 'purple' }}>Price : {item.price}$</div>
+                  <div style={{display : 'flex'}}>
+                    <div style={{ color: 'purple' }}>Price : {item.new_price}$</div>
+                    <div style={{ color: 'gray', paddingLeft : '15px' ,textDecoration : "line-through"}}>{item.old_price}$</div>
+                  </div>
                 </div>
               </div>
             </>
@@ -70,7 +76,10 @@ const Default = () => {
                   <br />
                   <div style={{ color: 'white' }}>Color : {item.color}</div>
                   <br />
-                  <div style={{ color: 'purple' }}>Price : {item.price}$</div>
+                  <div style={{display : 'flex'}}>
+                    <div style={{ color: 'purple' }}>Price : {item.new_price}$</div>
+                    <div style={{ color: 'gray', paddingLeft : '15px' ,textDecoration : "line-through"}}>{item.old_price}$</div>
+                  </div>
                 </div>
               </div>
             </>
