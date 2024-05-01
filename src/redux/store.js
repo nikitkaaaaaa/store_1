@@ -17,6 +17,7 @@ import states from "./states/states";
 import { jewelry } from "./main/jewelry";
 import { kitchen_items } from "./main/kitchen_items";
 import { headphones } from "./main/headphones";
+import { favorites } from "./favorites/favorites";
 const store = configureStore({
     reducer : {
         [pants.reducerPath] : pants.reducer,
@@ -36,12 +37,14 @@ const store = configureStore({
         [jewelry.reducerPath] : jewelry.reducer,
         [kitchen_items.reducerPath] :kitchen_items.reducer,
         [headphones.reducerPath] : headphones.reducer,
+        [favorites.reducerPath] : favorites.reducer,
         stateBasket : states,
-        statesale : states
+        statesale : states,
+        stateFavorites : states
     },
     middleware : (middleware) => middleware().concat(pants.middleware,tshirt.middleware,hats.middleware,
         hoodies.middleware,summer_shoes.middleware,autumn_shoes.middleware,spring_shoes.middleware,winter_shoes.middleware,
         washing_machines.middleware,refrigerators.middleware,televisions.middleware,microwave_ovens.middleware,basket.middleware,
-        liked.middleware,jewelry.middleware,kitchen_items.middleware,headphones.middleware)
+        liked.middleware,jewelry.middleware,kitchen_items.middleware,headphones.middleware,favorites.middleware)
 })
 export default store;

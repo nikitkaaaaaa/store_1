@@ -17,7 +17,7 @@
     background: black;
 }
 
-.basket{
+.basket,.favorites{
     background: black;
     height: 350px;
     width: 96%;

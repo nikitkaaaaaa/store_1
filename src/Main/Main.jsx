@@ -7,12 +7,14 @@ import Shoes from '../componets/Shoes';
 import Default from '../componets/Default';
 import Right_panel from './Right_panel';
 import { useDispatch } from 'react-redux';
-import { clouseBasket } from '../redux/states/states';
+import { clousFavorites, clouseBasket } from '../redux/states/states';
 import Basket from '../componets/Basket';
+import Favorites from '../componets/Favorites';
 const Main = () => {
       const dispatch = useDispatch();
       const clousebasket = () => {
         dispatch(clouseBasket());
+        dispatch(clousFavorites());
       }
       return (
         <div>
@@ -36,6 +38,7 @@ const Main = () => {
             <Route path= '/shoes' element = {<Shoes/>}></Route>
             <Route path= '/' element = {<Default/>}></Route>
             <Route path= '/basket' element = {<Basket/>}></Route>
+            <Route path= '/favorites' element = {<Favorites/>}></Route>
           </Routes>
         </div>
       )

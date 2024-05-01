@@ -4,6 +4,7 @@ export const states = createSlice({
     initialState: {
         stateBasket: false,
         statesale : true,
+        stateFavorites : false
     },
     reducers: {
         openBasket: (state) => ({
@@ -22,7 +23,15 @@ export const states = createSlice({
             ...state,
             statesale: true
         }),
+        clousFavorites: (state) => ({
+            ...state,
+            stateFavorites: false
+        }),
+        openFavorites: (state) => ({
+            ...state,
+            stateFavorites: true
+        }),
     }
 });
 export default states.reducer;
-export const { openBasket,clouseBasket,clousesale,opensale } = states.actions;
+export const { openBasket,clouseBasket,clousesale,opensale,clousFavorites,openFavorites } = states.actions;
