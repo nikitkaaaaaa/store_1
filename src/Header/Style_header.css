@@ -1,9 +1,13 @@
 .image_header{
     width: 15%;
+    padding-left: 80%;
+}
+.home{
+    width: 15%;
     padding-left: 5%;
 }
 header{
     display : flex;
     justify-content :space-between;
-    padding: 2% 0%;
+    padding: 1.5% 0%;
 }

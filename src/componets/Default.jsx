@@ -12,7 +12,7 @@ const Default = () => {
   const [addliked] = useAddlikedMutation();
   const dispatch = useDispatch();
   const add_at_liked = (item) => {
-    addliked({id : item.id,old_price : item.old_price,image : item.image, category : item.category, color : item.color, new_price : item.new_price});
+    addliked({id : item.id,old_price : item.old_price,image : item.image, category : item.category, color : item.color, new_price : item.new_price,metal : item.metal});
     dispatch(clousesale());
   }
   return (
@@ -28,7 +28,7 @@ const Default = () => {
                 <div style={{ padding: '0px 0px 30px 10px' }}>
                   <div style={{ color: 'white' }}>Category : {item.category}</div>
                   <br />
-                  <div style={{ color: 'white' }}>Color : {item.color}</div>
+                  <div style={{ color: 'white' }}>Color : {item.metal}</div>
                   <br />
                   <div style={{display : 'flex'}}>
                     <div style={{ color: 'purple' }}>Price : {item.new_price}$</div>

@@ -7,7 +7,7 @@ import Shoes from '../componets/Shoes';
 import Default from '../componets/Default';
 import Right_panel from './Right_panel';
 import { useDispatch } from 'react-redux';
-import { clousFavorites, clouseBasket } from '../redux/states/states';
+import { clousFavorites, clouseBasket, opensale } from '../redux/states/states';
 import Basket from '../componets/Basket';
 import Favorites from '../componets/Favorites';
 const Main = () => {
